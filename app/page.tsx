@@ -1,3 +1,9 @@
+import Loading from "./components/Loading";
+
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Loading />
+    </>
+  );
 }
