@@ -22,7 +22,7 @@ const config: Config = {
       },
       animation: {
         pulse: "pulse 1s infinite",
-        widthAnimation: "widthAnimation 1s",
+        widthAnimation: "widthAnimation 1s forwards",
       },
       keyframes: {
         pulse: {
