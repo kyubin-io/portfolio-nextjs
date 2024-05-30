@@ -14,7 +14,7 @@ export default function Loading() {
   useEffect(() => {
     const bar = setInterval(() => {
       callApi();
-    }, 20);
+    }, 10);
     if (barWidth >= 100) {
       clearInterval(bar);
     }
@@ -23,7 +23,10 @@ export default function Loading() {
 
   return (
     <div className="fixed inset-0 h-screen w-full z-[99] bg-[#0b134f] grid place-items-center font-orbitron">
-      <div className="relative w-[500px] h-[200px] border-[3px] border-solid border-green-400 border-t-green-700 border-b-green-700 max-[600px]:w-[90vw]">
+      <div
+        className="relative w-[500px] h-[200px] border-[3px] border-solid border-green-400 border-t-green-700 border-b-green-700 
+      max-[600px]:w-[90vw]"
+      >
         <div
           className={`relative text-white   p-4 text-xl font-bold flex items-center justify-center max-[355px]:text-sm ${
             barWidth === 100 && opacityAnimate
@@ -35,8 +38,8 @@ export default function Loading() {
           OADING EXPERIENCE
         </div>
         <div
-          className={`absolute w-[90%] h-[10px] top-[50%] left-[50%] translate-x-[-50%] bg-[#ccc] rounded-sm ${
-            barWidth === 100 && loadingBarAnimate
+          className={`w-[90%] h-[10px] absolute top-1/2 translate-x-[-50%] bg-[#ccc] rounded-sm ${
+            barWidth === 100 ? loadingBarAnimate : "left-1/2"
           }`}
         >
           <div
@@ -46,6 +49,7 @@ export default function Loading() {
             {/* inner */}
           </div>
         </div>
+
         <div
           className={`absolute top-[70%] left-0 text-white text-xl font-bold w-full flex items-center justify-between p-[10px] ${
             barWidth === 100 && opacityAnimate
