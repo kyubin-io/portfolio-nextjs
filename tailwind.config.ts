@@ -21,7 +21,9 @@ const config: Config = {
         "blue-color": "var(--blue-color)",
       },
       fontFamily: {
+        roboto: ["var(--font-roboto)"],
         orbitron: ["var(--font-orbitron)"],
+        tiltPrism: ["var(--font-tiltPrism)"],
       },
       animation: {
         pulse: "pulse 1s infinite",

@@ -40,7 +40,7 @@ export default function Loading() {
 
   return (
     <div
-      className={`fixed inset-0 h-screen w-full z-[99] bg-[#0b134f] grid place-items-center font-orbitron 
+      className={`fixed font-orbitron inset-0 h-screen w-full z-[99] bg-[#0b134f] grid place-items-center 
     ${barWidth === 100 && backgroundAnimate} 
     
     `}
