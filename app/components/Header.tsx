@@ -5,15 +5,14 @@ const LINK_EFFECT =
 
 export default function Header() {
   return (
-    <header className="group absolute top-4 left-1/2 translate-x-[-50%]">
-      <h1 className="text-white text-shadow-a">eeeeeee</h1>
+    <header className="group absolute top-4 left-1/2 -translate-x-1/2">
       <div className="p-[10px] flex items-center justify-between w-[60vw] max-[1200px]:w-screen max-[370px]:gap-[20%]">
         {/* header__wrap */}
         <ul className="flex items-center gap-8">
           {/* header__left */}
           <li className="text-lg font-bold max-[370px]:hidden">
             <Link href="#" className={LINK_EFFECT}>
-              <span className="text-shadow-a">Home</span>
+              <span>Home</span>
             </Link>
           </li>
           <li className="text-lg font-bold max-[650px]:hidden">

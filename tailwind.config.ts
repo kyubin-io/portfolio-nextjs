@@ -9,13 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        a: "5px 4px var(--red-color), -5px -6px var(--blue-color)",
-        b: "-5px -6px var(--red-color), 5px 4px var(--blue-color)",
-        c: "5px -4px var(--red-color), -8px 4px var(--blue-color)",
-        d: "-8px -4px var(--red-color), -5px -4px var(--blue-color)",
-        e: "-5px 0px var(--red-color), 5px -4px var(--blue-color)",
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -47,35 +40,29 @@ const config: Config = {
 
         coloredIconAnimation: {
           "0%": {
-            "box-shadow": "5px 4px red, -5px -6px blue",
+            "box-shadow":
+              "3px 2px rgba(244, 67, 54, 0.75), -3px -4px rgba(33, 150 ,243, 0.75)",
           },
           "25%": {
-            "box-shadow": "-5px -6px red, 5px 4px blue",
+            "box-shadow":
+              "-3px -4px rgba(244, 67, 54, 0.75), 3px 2px rgba(33, 150 ,243, 0.75)",
           },
           "50%": {
-            "box-shadow": "5px -4px red, -8px 4px blue",
+            "box-shadow":
+              "3px -2px rgba(244, 67, 54, 0.75), -6px 2px rgba(33, 150 ,243, 0.75)",
           },
           "75%": {
-            "box-shadow": "-8px -4px red, -5px -4px blue",
+            "box-shadow":
+              "-6px -2px rgba(244, 67, 54, 0.75), -3px -2px rgba(33, 150 ,243, 0.75)",
           },
           "100%": {
-            "box-shadow": "-5px 0px red, 5px -4px blue",
+            "box-shadow":
+              "-3px 0px rgba(244, 67, 54, 0.75), 3px -2px rgba(33, 150 ,243, 0.75)",
           },
         },
       },
     },
   },
-  plugins: [
-    plugin(function ({ matchUtilities, theme }: any) {
-      matchUtilities(
-        {
-          "text-shadow": (value: any) => ({
-            textShadow: value,
-          }),
-        },
-        { values: theme("textShadow") }
-      );
-    }),
-  ],
+  plugins: [],
 };
 export default config;

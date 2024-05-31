@@ -66,13 +66,13 @@ export default function Loading() {
             barWidth === 100 && opacityAnimate
           }`}
         >
-          <div className="w-[85%] h-[1px] bg-dark-green-color absolute bottom-0 left-[50%] translate-x-[-50%] animate-[widthAnimation_1s_forwards]"></div>
+          <div className="w-[85%] h-[1px] bg-dark-green-color absolute bottom-0 left-[50%] -translate-x-1/2 animate-[widthAnimation_1s_forwards]"></div>
           L
           <div className="w-4 h-4 my-0 mx-[3px] rounded-[50%] bg-white animate-[pulse_1s_infinite]"></div>
           OADING EXPERIENCE
         </div>
         <div
-          className={`w-[90%] h-[10px] absolute top-1/2 translate-x-[-50%] bg-[#ccc] rounded-sm ${
+          className={`w-[90%] h-[10px] absolute top-1/2 -translate-x-1/2 bg-[#ccc] rounded-sm ${
             barWidth === 100 ? loadingBarAnimate : "left-1/2"
           }`}
         >
