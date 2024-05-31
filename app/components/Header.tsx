@@ -5,17 +5,18 @@ const LINK_EFFECT =
 
 export default function Header() {
   return (
-    <header className="absolute top-4 left-1/2 translate-x-[-50%]">
-      <div className="p-[10px] flex items-center justify-between w-[60vw]">
+    <header className="group absolute top-4 left-1/2 translate-x-[-50%]">
+      <h1 className="text-white text-shadow-a">eeeeeee</h1>
+      <div className="p-[10px] flex items-center justify-between w-[60vw] max-[1200px]:w-screen max-[370px]:gap-[20%]">
         {/* header__wrap */}
         <ul className="flex items-center gap-8">
           {/* header__left */}
-          <li className="text-lg font-bold">
+          <li className="text-lg font-bold max-[370px]:hidden">
             <Link href="#" className={LINK_EFFECT}>
-              <span className="">Home</span>
+              <span className="text-shadow-a">Home</span>
             </Link>
           </li>
-          <li className="text-lg font-bold">
+          <li className="text-lg font-bold max-[650px]:hidden">
             <Link href="#" className={LINK_EFFECT}>
               <span>Reviews</span>
             </Link>
@@ -25,12 +26,12 @@ export default function Header() {
               <span>Projects</span>
             </Link>
           </li>
-          <li className="text-lg font-bold">
+          <li className="text-lg font-bold max-[650px]:hidden">
             <Link href="#" className={LINK_EFFECT}>
               <span>Insights</span>
             </Link>
           </li>
-          <li className="text-lg font-bold">
+          <li className="text-lg font-bold max-[650px]:hidden">
             <Link href="#" className={LINK_EFFECT}>
               <span>Faq</span>
             </Link>
@@ -38,7 +39,7 @@ export default function Header() {
         </ul>
         <div>
           {/* header__right */}
-          <button className="text-whit relative inline-flex  group">
+          <button className="text-whit relative inline-flex group max-[800px]:scale-75">
             <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
             <span className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
               Contact
