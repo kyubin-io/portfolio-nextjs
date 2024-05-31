@@ -27,6 +27,8 @@ const config: Config = {
         pulse: "pulse 1s infinite",
         widthAnimation: "widthAnimation 1s forwards",
         coloredIconAnimation: "coloredIconAnimation 0.2s infinite",
+        movingWheel: "movingWheel 0.5s linear infinite",
+        scrollAnim: "scrollAnim 1s infinite",
       },
       keyframes: {
         pulse: {
@@ -37,7 +39,6 @@ const config: Config = {
           "0%": { width: "85%" },
           "100%": { width: "280px" },
         },
-
         coloredIconAnimation: {
           "0%": {
             "box-shadow":
@@ -59,6 +60,18 @@ const config: Config = {
             "box-shadow":
               "-3px 0px rgba(244, 67, 54, 0.75), 3px -2px rgba(33, 150 ,243, 0.75)",
           },
+        },
+        movingWheel: {
+          "0%": { top: "1px" },
+          "25%": { top: "2px" },
+          "50%": { top: "3px" },
+          "75%": { top: "2px" },
+          "100%": { top: "1px" },
+        },
+        scrollAnim: {
+          "0%": { opacity: "0" },
+          "50%": { opacity: "0.5" },
+          "100%": { opacity: "1" },
         },
       },
     },
