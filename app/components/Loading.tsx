@@ -7,7 +7,8 @@ const loadingBarAnimate = "duration-[5000ms] rotate-90 left-[1000%]";
 const opacityAnimate = "duration-[500ms] opacity-0";
 const boxAnimate = "duration-[1000ms] h-[500px] rounded-[50%]";
 const boxAnimate2 = "border-none";
-const svgAnimate = "duration-[10000ms] opacity-100 rotate-180 rounded-[50%]";
+const svgAnimate =
+  "duration-[10000ms] opacity-100 rotate-[270deg] rounded-[50%]";
 const svgAnimate2 = "duration-[50000ms] rotate-[360deg] opacity-100";
 const backgroundAnimate =
   "duration-[2000ms] delay-[2000ms] bg-transparent opacity-50";
