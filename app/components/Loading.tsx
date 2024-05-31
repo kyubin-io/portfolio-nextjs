@@ -11,7 +11,7 @@ const svgAnimate =
   "duration-[10000ms] opacity-100 rotate-[270deg] rounded-[50%]";
 const svgAnimate2 = "duration-[50000ms] rotate-[360deg] opacity-100";
 const backgroundAnimate =
-  "duration-[2000ms] delay-[2000ms] bg-transparent opacity-50";
+  "duration-[2000ms] delay-[2000ms] z-[1] bg-transparent opacity-50";
 
 export default function Loading() {
   const [barWidth, setBarWidth] = useState(0);
@@ -40,7 +40,7 @@ export default function Loading() {
 
   return (
     <div
-      className={`fixed inset-0 h-screen w-full z-[99] bg-[#0b134f] grid place-items-center font-orbitron
+      className={`fixed inset-0 h-screen w-full z-[99] bg-[#0b134f] grid place-items-center font-orbitron 
     ${barWidth === 100 && backgroundAnimate} 
     
     `}

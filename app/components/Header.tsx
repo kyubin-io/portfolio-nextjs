@@ -5,7 +5,7 @@ const LINK_EFFECT =
 
 export default function Header() {
   return (
-    <header className="group absolute top-4 left-1/2 -translate-x-1/2">
+    <header className="group absolute top-4 left-1/2 -translate-x-1/2 z-[2]">
       <div className="p-[10px] flex items-center justify-between w-[60vw] max-[1200px]:w-screen max-[370px]:gap-[20%]">
         {/* header__wrap */}
         <ul className="flex items-center gap-8">

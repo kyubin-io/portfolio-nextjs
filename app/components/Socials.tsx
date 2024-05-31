@@ -23,7 +23,7 @@ const LINKS = [
 
 export default function Socials() {
   return (
-    <ul className="absolute left-1/2 bottom-40 transform -translate-x-1/2 flex items-center gap-4">
+    <ul className="absolute left-1/2 bottom-40 transform -translate-x-1/2 flex items-center gap-4 z-[2]">
       {LINKS.map((link, index) => (
         <a
           key={index}
