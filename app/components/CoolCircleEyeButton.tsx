@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 export default function CoolCircleEyeButton() {
@@ -8,7 +6,7 @@ export default function CoolCircleEyeButton() {
       href="#"
       title="live website"
       target="_blank"
-      className="group relative inline-block"
+      className="group relative inline-block max-[1350px]:translate-x-[-10rem] max-[1350px]:-translate-y-12 max-[440px]:translate-x-0 max-[440px]:translate-y-0"
     >
       {/* textcircle */}
       <svg

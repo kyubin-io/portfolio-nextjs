@@ -1,3 +1,4 @@
+import Faq from "./components/Faq";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Loading from "./components/Loading";
@@ -26,6 +27,8 @@ export default function Home() {
       <Skills />
       {/* projects */}
       <Projects />
+      {/* faq */}
+      <Faq />
     </>
   );
 }

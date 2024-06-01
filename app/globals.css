@@ -6,6 +6,12 @@
   .section-primary {
     @apply p-4 overflow-hidden min-h-screen pt-20 min-[650px]:p-20;
   }
+  .header-title {
+    @apply font-normal text-lg text-[#666];
+  }
+  .header-subtitle {
+    @apply text-[27px] font-bold;
+  }
 }
 
 :root {
