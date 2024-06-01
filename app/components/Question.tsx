@@ -1,7 +1,14 @@
 "use client";
 import { useState } from "react";
 
-export default function Question() {
+type Props = {
+  question: {
+    question: string;
+    answer: string;
+  };
+};
+
+export default function Question({ question: { question, answer } }: Props) {
   const [open, setOpen] = useState(false);
 
   function handleOpen() {
@@ -22,7 +29,7 @@ export default function Question() {
           }`}
         ></div>
         <h3 className="cursor-pointer text-[27px] text-[#0f0f0f] font-semibold max-[700px]:text-[22px]">
-          How long does it take to build a website?
+          {question}
         </h3>
       </div>
       {/* question__answer */}
@@ -31,10 +38,7 @@ export default function Question() {
           open ? "block" : "hidden"
         }`}
       >
-        <p>
-          This completely depends on what you need. It takes longer to build a
-          1000 page megasite than a smaller eight page brochure website.
-        </p>
+        <p>{answer}</p>
       </div>
     </div>
   );
