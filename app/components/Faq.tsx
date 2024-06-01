@@ -39,7 +39,7 @@ export default function Faq() {
       {/* feq__wrap */}
       <div className="py-12 px-[4.5%]">
         {/* section__header-title */}
-        <div className="header-title text-white font-orbitron">/Faq</div>
+        <div className="header-title text-white">/Faq</div>
         {/* section__header-subtitle */}
         <div className="header-subtitle">Have any questions ?</div>
         {/* question */}

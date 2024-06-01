@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import Faq from "./components/Faq";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
@@ -29,6 +30,8 @@ export default function Home() {
       <Projects />
       {/* faq */}
       <Faq />
+      {/* contact */}
+      <Contact />
     </>
   );
 }
