@@ -1,9 +1,11 @@
+"use client";
+
 import Link from "next/link";
 
 export default function CoolCircleEyeButton() {
   return (
     <Link
-      href={"#"}
+      href="#"
       title="live website"
       target="_blank"
       className="group relative inline-block"

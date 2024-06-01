@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithubSquare, FaLinkedin, FaBlogger } from "react-icons/fa";
 
 const LINKS = [
@@ -25,7 +26,7 @@ export default function Socials() {
   return (
     <ul className="absolute left-1/2 bottom-40 transform -translate-x-1/2 flex items-center gap-4 z-[2]">
       {LINKS.map((link, index) => (
-        <a
+        <Link
           key={index}
           href={link.url}
           target="_blank"
@@ -33,7 +34,7 @@ export default function Socials() {
           className="text-4xl"
         >
           {link.icon}
-        </a>
+        </Link>
       ))}
     </ul>
   );
