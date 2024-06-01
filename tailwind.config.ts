@@ -31,6 +31,11 @@ const config: Config = {
         coloredIconAnimation: "coloredIconAnimation 0.2s infinite",
         movingWheel: "movingWheel 0.5s linear infinite",
         scrollAnim: "scrollAnim 1s infinite",
+        moveLeft: "moveLeft 30s linear infinite",
+        moveRight: "moveRight 30s linear infinite",
+        rotate: "rotate 7s linear infinite",
+        eyeHide: "eyeHide 2s step-end infinite",
+        eyeShow: "eyeShow 2s step-end infinite",
       },
       keyframes: {
         pulse: {
@@ -74,6 +79,25 @@ const config: Config = {
           "0%": { opacity: "0" },
           "50%": { opacity: "0.5" },
           "100%": { opacity: "1" },
+        },
+        moveLeft: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        moveRight: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(50%)" },
+        },
+        rotate: {
+          to: { transform: "rotate(-360deg)" },
+        },
+        eyeHide: {
+          "0%": { opacity: "0" },
+          "10%": { opacity: "1" },
+        },
+        eyeShow: {
+          "0%": { opacity: "1" },
+          "10%": { opacity: "0" },
         },
       },
     },

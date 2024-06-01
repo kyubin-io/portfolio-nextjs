@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .section-primary {
+    @apply p-4 overflow-hidden min-h-screen pt-20 min-[650px]:p-20;
+  }
+}
+
 :root {
   --green-color: #6cff8d;
   --dark-green-color: #6cff8c7a;
