@@ -1,6 +1,9 @@
 export default function Skills() {
   return (
-    <section className="relative text-[40px] h-[300px] bg-black overflow-hidden text-center pt-4 text-white max-[700px]:h-[200px]">
+    <section
+      className="relative text-[40px] h-[300px] bg-black overflow-hidden text-center pt-4 text-white max-[700px]:h-[200px]"
+      id="skills"
+    >
       {/* skills__header */}
       <div className="font-semibold">My expertise</div>
       {/* skills__text left */}

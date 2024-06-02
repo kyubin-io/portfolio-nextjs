@@ -1,5 +1,5 @@
 const H4_CLASS =
-  "text-4xl w-[93%] pt-4 min-[500px]:text-[55px] min-[1200px]:text-[70px]";
+  "text-4xl w-[93%] pt-8 min-[500px]:text-[55px] min-[1200px]:text-[70px]";
 
 const introAnimate = "duration-[1000ms] delay-[3000ms] visible";
 

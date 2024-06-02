@@ -22,20 +22,25 @@ export default function Header({ barWidth }: any) {
             </Link>
           </li>
           <li className="text-lg font-bold max-[650px]:hidden">
+            <Link href="#skills" className={LINK_EFFECT}>
+              <span>Skills</span>
+            </Link>
+          </li>
+          {/* <li className="text-lg font-bold max-[650px]:hidden">
             <Link href="#reviews" className={LINK_EFFECT}>
               <span>Reviews</span>
             </Link>
-          </li>
+          </li> */}
           <li className="text-lg font-bold">
             <Link href="#projects" className={LINK_EFFECT}>
               <span>Projects</span>
             </Link>
           </li>
-          <li className="text-lg font-bold max-[650px]:hidden">
+          {/* <li className="text-lg font-bold max-[650px]:hidden">
             <Link href="#insights" className={LINK_EFFECT}>
               <span>Insights</span>
             </Link>
-          </li>
+          </li> */}
           <li className="text-lg font-bold max-[650px]:hidden">
             <Link href="#faq" className={LINK_EFFECT}>
               <span>Faq</span>
