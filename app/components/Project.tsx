@@ -39,7 +39,7 @@ export default function Project({
         {/* project__infos--name */}
         <h1 className="relative text-[3vw] font-sans flex items-center max-[1350px]:text-4xl max-[740px]:text-3xl">
           {title}
-          <span className="max-[740px]:hidden">(Very advanced)</span>
+          {/* <span className="max-[740px]:hidden">(Very advanced)</span> */}
         </h1>
       </div>
       {/* project__img */}
@@ -64,7 +64,12 @@ export default function Project({
             <span>Github</span>
           </button>
           {/* error */}
-          <CoolCircleEyeButton text={".Click to see the live version."} />
+          {link && (
+            <CoolCircleEyeButton
+              text={".Click to see the live version."}
+              link={link}
+            />
+          )}
         </Link>
         {/* project__tags */}
         <div className="absolute bottom-4 flex flex-col gap-4 max-[740px]:flex-row max-[740px]:top-0 max-[740px]:left-0 max-[440px]:gap-[6px] max-[440px]:text-xs">

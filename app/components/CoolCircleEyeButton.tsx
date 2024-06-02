@@ -2,12 +2,14 @@ import Link from "next/link";
 
 type Props = {
   text: string;
+  link: string;
 };
 
-export default function CoolCircleEyeButton({ text }: Props) {
+export default function CoolCircleEyeButton({ text, link }: Props) {
+  console.log(link);
   return (
     <Link
-      href="#"
+      href={`${link}`}
       title="live website"
       target="_blank"
       className={`group relative inline-block max-[440px]:translate-x-0 max-[440px]:translate-y-0 ${
