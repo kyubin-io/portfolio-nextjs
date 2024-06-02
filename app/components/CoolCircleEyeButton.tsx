@@ -10,7 +10,10 @@ export default function CoolCircleEyeButton({ text }: Props) {
       href="#"
       title="live website"
       target="_blank"
-      className="group relative inline-block max-[1350px]:translate-x-[-10rem] max-[1350px]:-translate-y-12 max-[440px]:translate-x-0 max-[440px]:translate-y-0"
+      className={`group relative inline-block max-[440px]:translate-x-0 max-[440px]:translate-y-0 ${
+        text.includes("live") &&
+        "max-[1350px]:translate-x-[-10rem] max-[1350px]:-translate-y-12"
+      }`}
     >
       {/* textcircle */}
       <svg className="block w-[250px] animate-rotate" viewBox="0 0 500 500">

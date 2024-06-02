@@ -1,5 +1,7 @@
+import ContactFooter from "./ContactFooter";
 import ContactForm from "./ContactForm";
 import ContactProfile from "./ContactProfile";
+import ContactSocials from "./ContactSocials";
 
 export default function Contact() {
   return (
@@ -13,10 +15,10 @@ export default function Contact() {
           {/* section__header-subtitle */}
           <div className="header-subtitle">Get in touch</div>
         </div>
-        {/* contact__form */}
         <ContactForm />
-        {/* contact_profile */}
         <ContactProfile />
+        <ContactSocials />
+        <ContactFooter />
       </div>
     </section>
   );

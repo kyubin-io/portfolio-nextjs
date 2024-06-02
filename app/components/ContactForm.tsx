@@ -10,7 +10,7 @@ const FLEX_CLASS = "flex gap-4 mb-8 max-[900px]:flex-col";
 export default function ContactForm() {
   return (
     <div>
-      <form action="#">
+      <form action="https://formspree.io/f/mwkgdone" method="POST">
         {/* form__flex */}
         <div className={FLEX_CLASS}>
           {/* form__info */}
@@ -20,6 +20,8 @@ export default function ContactForm() {
               className={INPUT_CLASS}
               type="text"
               placeholder="Type here"
+              name="full name"
+              required
             />
           </div>
           {/* form__info */}
@@ -29,6 +31,8 @@ export default function ContactForm() {
               className={INPUT_CLASS}
               type="text"
               placeholder="Type of service"
+              name="service"
+              required
             />
           </div>
         </div>
@@ -39,8 +43,10 @@ export default function ContactForm() {
             <label>Get in touch with me at</label>
             <input
               className={INPUT_CLASS}
-              type="text"
+              type="email"
               placeholder="Your Email id here"
+              name="email address"
+              required
             />
           </div>
         </div>
@@ -49,6 +55,8 @@ export default function ContactForm() {
         <div className={FLEX_CLASS}>
           <textarea
             placeholder="Your Message"
+            name="message"
+            required
             className="w-[70%] bg-transparent border-b border-solid 
                   border-black text-[2.2vw] text-white resize-none placeholder:text-gray-200 focus:outline-none max-[900px]:text-[4vw] max-[610px]:w-full max-[610px]:text-[5vw]"
           />

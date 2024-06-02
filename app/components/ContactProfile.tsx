@@ -44,7 +44,8 @@ export default function ContactProfile() {
       {/* contact__profile-item */}
       <div className={ITEM_CLASS}>
         {/* contact__profile-bg */}
-        <div className="absolute w-[250px] h-[100px] bg-[#f6d5a4] rounded-[5px] left-[20%]"></div>
+        <div className="absolute w-[200px] h-[100px] bg-[#f6d5a4] rounded-[5px] left-[20%]"></div>
+        <div className="absolute w-[100px] h-[200px] bg-[#f02132] rounded-[5px] left-[20%] opacity-20"></div>
         {/* contact__profile-col */}
         <div className={COL_CLASS}>
           <span>Get in touch</span>
