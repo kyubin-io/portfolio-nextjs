@@ -1,6 +1,12 @@
-export default function ScrollDown() {
+const scrollDownAnimate = "duration-[1000ms] delay-[3000ms] bottom-12";
+
+export default function ScrollDown({ barWidth }: any) {
   return (
-    <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
+    <div
+      className={`absolute left-1/2 -translate-x-1/2 ${
+        barWidth >= 100 ? scrollDownAnimate : "bottom-[-100%]"
+      }`}
+    >
       {/* __wheel */}
       <div className="h-[42px] w-[24px] rounded-[10px] border-2 border-solid border-white">
         {/* wheel--inner */}

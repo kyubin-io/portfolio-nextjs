@@ -17,20 +17,20 @@ export default function Home() {
 
   return (
     <>
-      <Loading barWidth={barWidth} setBarWidth={setBarWidth} />
       {/* landing */}
       <div
         className="relative w-full h-screen bg-[#111] text-white overflow-hidden
-      bg-[url('/img/52.jpg')] bg-cover bg-no-repeat
-      "
+        bg-[url('/img/52.jpg')] bg-cover bg-no-repeat
+        "
       >
+        <Loading barWidth={barWidth} setBarWidth={setBarWidth} />
         <ThreejsBg />
         <Header barWidth={barWidth} />
-        <Intro />
-        <Socials />
+        <Intro barWidth={barWidth} />
+        <Socials barWidth={barWidth} />
 
         {/* scrollDown */}
-        <ScrollDown />
+        <ScrollDown barWidth={barWidth} />
       </div>
       {/* skills */}
       <Skills />

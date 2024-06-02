@@ -22,9 +22,15 @@ const LINKS = [
   },
 ];
 
-export default function Socials() {
+const socialsAnimate = "duration-[1000ms] delay-[2500ms] bottom-40";
+
+export default function Socials({ barWidth }: any) {
   return (
-    <ul className="absolute left-1/2 bottom-40 transform -translate-x-1/2 flex items-center gap-4 z-[2]">
+    <ul
+      className={`absolute left-1/2 transform -translate-x-1/2 flex items-center gap-4 z-[2] ${
+        barWidth === 100 ? socialsAnimate : "bottom-[-100%]"
+      }`}
+    >
       {LINKS.map((link, index) => (
         <Link
           key={index}

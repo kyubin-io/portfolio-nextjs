@@ -43,7 +43,7 @@ export default function Loading({ barWidth, setBarWidth }: Props) {
 
   return (
     <div
-      className={`fixed font-orbitron inset-0 h-screen w-full z-[99] bg-[#0b134f] grid place-items-center 
+      className={`absoulte font-orbitron inset-0 h-screen w-full z-[99] bg-[#0b134f] grid place-items-center 
     ${barWidth === 100 && backgroundAnimate} 
     
     `}
