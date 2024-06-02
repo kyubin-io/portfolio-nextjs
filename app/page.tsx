@@ -11,12 +11,14 @@ import ScrollDown from "./components/ScrollDown";
 import Skills from "./components/Skills";
 import Socials from "./components/Socials";
 import ThreejsBg from "./components/ThreejsBg";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
   const [barWidth, setBarWidth] = useState<number>(0);
 
   return (
     <>
+      <ScrollToTop />
       {/* landing */}
       <div
         className="relative w-full h-screen bg-[#111] text-white overflow-hidden
