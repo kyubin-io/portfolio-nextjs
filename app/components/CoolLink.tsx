@@ -2,14 +2,22 @@ import Link from "next/link";
 
 type Props = {
   skill: string;
+  link?: string;
 };
 
-export default function CoolLink({ skill }: Props) {
+export default function CoolLink({ skill, link = "" }: Props) {
+  const handleClick = (e: any) => {
+    if (!link) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <Link
-      href={"#"}
+      href={`${link}`}
       title={skill}
       className="group relative font-sans text-black"
+      onClick={(e) => handleClick(e)}
     >
       <span>{skill}</span>
       <svg

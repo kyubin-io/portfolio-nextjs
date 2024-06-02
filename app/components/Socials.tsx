@@ -12,7 +12,7 @@ const LINKS = [
     icon: (
       <FaLinkedin className="hover:animate-[coloredIconAnimation_0.2s_infinite]" />
     ),
-    url: "https://www.linkedin.com/in/kyubin-agnes/",
+    url: "https://www.linkedin.com/in/kyubin-kim-935788293/",
   },
   {
     icon: (
