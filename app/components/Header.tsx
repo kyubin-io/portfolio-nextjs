@@ -17,39 +17,41 @@ export default function Header({ barWidth }: any) {
         <ul className="flex items-center gap-8">
           {/* header__left */}
           <li className="text-lg font-bold max-[370px]:hidden">
-            <Link href="#" className={LINK_EFFECT}>
+            <Link href="#home" className={LINK_EFFECT}>
               <span>Home</span>
             </Link>
           </li>
           <li className="text-lg font-bold max-[650px]:hidden">
-            <Link href="#" className={LINK_EFFECT}>
+            <Link href="#reviews" className={LINK_EFFECT}>
               <span>Reviews</span>
             </Link>
           </li>
           <li className="text-lg font-bold">
-            <Link href="#" className={LINK_EFFECT}>
+            <Link href="#projects" className={LINK_EFFECT}>
               <span>Projects</span>
             </Link>
           </li>
           <li className="text-lg font-bold max-[650px]:hidden">
-            <Link href="#" className={LINK_EFFECT}>
+            <Link href="#insights" className={LINK_EFFECT}>
               <span>Insights</span>
             </Link>
           </li>
           <li className="text-lg font-bold max-[650px]:hidden">
-            <Link href="#" className={LINK_EFFECT}>
+            <Link href="#faq" className={LINK_EFFECT}>
               <span>Faq</span>
             </Link>
           </li>
         </ul>
         <div>
           {/* header__right */}
-          <button className="text-whit relative inline-flex group max-[800px]:scale-75">
-            <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-            <span className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-              Contact
-            </span>
-          </button>
+          <Link href="#contact">
+            <button className="text-whit relative inline-flex group max-[800px]:scale-75">
+              <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <span className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                Contact
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </header>

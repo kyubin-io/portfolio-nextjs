@@ -35,7 +35,10 @@ const questions = [
 
 export default function Faq() {
   return (
-    <div className="bg-gradient-to-r from-violet-600 to-indigo-600 relative">
+    <div
+      className="bg-gradient-to-r from-violet-600 to-indigo-600 relative"
+      id="faq"
+    >
       {/* feq__wrap */}
       <div className="py-12 px-[4.5%]">
         {/* section__header-title */}

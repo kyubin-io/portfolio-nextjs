@@ -5,7 +5,10 @@ import ContactSocials from "./ContactSocials";
 
 export default function Contact() {
   return (
-    <section className="section-primary relative font-sans bg-gradient-to-r from-amber-500 to-pink-500 max-[1100px]:p-8">
+    <section
+      className="section-primary relative font-sans bg-gradient-to-r from-amber-500 to-pink-500 max-[1100px]:p-8"
+      id="contact"
+    >
       {/* contact__wrapper */}
       <div>
         {/* contact__header */}

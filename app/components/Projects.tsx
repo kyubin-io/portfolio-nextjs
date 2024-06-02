@@ -5,7 +5,10 @@ import CoolLink from "./CoolLink";
 
 export default function Projects() {
   return (
-    <section className="section-primary max-[1350px]:p-12 max-[740px]:p-4">
+    <section
+      className="section-primary max-[1350px]:p-12 max-[740px]:p-4"
+      id="projects"
+    >
       {/* projects__header */}
       <h1 className="text-6xl italic pb-[10px]">Some of my work</h1>
       {/* project */}
