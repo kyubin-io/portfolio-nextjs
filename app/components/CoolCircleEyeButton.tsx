@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-export default function CoolCircleEyeButton() {
+type Props = {
+  text: string;
+};
+
+export default function CoolCircleEyeButton({ text }: Props) {
   return (
     <Link
       href="#"
@@ -9,10 +13,7 @@ export default function CoolCircleEyeButton() {
       className="group relative inline-block max-[1350px]:translate-x-[-10rem] max-[1350px]:-translate-y-12 max-[440px]:translate-x-0 max-[440px]:translate-y-0"
     >
       {/* textcircle */}
-      <svg
-        className="block w-[250px] hover:animate-rotate"
-        viewBox="0 0 500 500"
-      >
+      <svg className="block w-[250px] animate-rotate" viewBox="0 0 500 500">
         <defs>
           <path
             id="textcircle"
@@ -20,12 +21,8 @@ export default function CoolCircleEyeButton() {
           />
         </defs>
         <text className="text-[32px] uppercase fill-black group-hover:font-medium">
-          <textPath
-            xlinkHref="#textcircle"
-            aria-label=".Click to see the live version."
-            textLength="900"
-          >
-            .Click to see the live version.
+          <textPath xlinkHref="#textcircle" aria-label={text} textLength="900">
+            {text}
           </textPath>
         </text>
       </svg>

@@ -54,7 +54,7 @@ export default function Projects() {
               <span>Github</span>
             </button>
             {/* error */}
-            <CoolCircleEyeButton />
+            <CoolCircleEyeButton text={".Click to see the live version."} />
           </Link>
           {/* project__tags */}
           <div className="absolute bottom-4 flex flex-col gap-4 max-[740px]:flex-row max-[740px]:top-0 max-[740px]:left-0 max-[440px]:gap-[6px] max-[440px]:text-xs">
