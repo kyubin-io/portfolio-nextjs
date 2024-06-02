@@ -3,9 +3,15 @@ import Link from "next/link";
 const LINK_EFFECT =
   "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left";
 
-export default function Header() {
+const headerAnimate = "duration-[1000ms] delay-[2000ms] top-0";
+
+export default function Header({ barWidth }: any) {
   return (
-    <header className="group absolute top-4 left-1/2 -translate-x-1/2 z-[2] font-orbitron">
+    <header
+      className={`group absolute left-1/2 -translate-x-1/2 z-[2] font-orbitron ${
+        barWidth === 100 ? headerAnimate : "top-[-100%]"
+      }`}
+    >
       <div className="p-[10px] flex items-center justify-between w-[60vw] max-[1200px]:w-screen max-[370px]:gap-[20%]">
         {/* header__wrap */}
         <ul className="flex items-center gap-8">

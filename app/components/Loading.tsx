@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import loadingImage from "../../public/img/loader13.svg";
@@ -13,12 +12,16 @@ const svgAnimate2 = "duration-[50000ms] rotate-[360deg] opacity-100";
 const backgroundAnimate =
   "duration-[2000ms] delay-[2000ms] z-[1] bg-transparent opacity-50";
 
-export default function Loading() {
-  const [barWidth, setBarWidth] = useState(0);
+type Props = {
+  barWidth: number;
+  setBarWidth: React.Dispatch<React.SetStateAction<number>>;
+};
+
+export default function Loading({ barWidth, setBarWidth }: Props) {
   const [timeOutState, setTimeOutState] = useState(false);
 
   const callApi = () => {
-    setBarWidth((state) => state + 1);
+    setBarWidth((state: number) => state + 1);
   };
 
   useEffect(() => {
