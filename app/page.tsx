@@ -24,9 +24,10 @@ export default function Home() {
         className="relative w-full h-screen bg-[#111] text-white overflow-hidden
         bg-[url('/img/52.jpg')] bg-cover bg-no-repeat
         "
+        // className="relative w-full h-screen bg-[#111] text-white overflow-hidden"
       >
         <Loading barWidth={barWidth} setBarWidth={setBarWidth} />
-        <ThreejsBg />
+        {/* <ThreejsBg /> */}
         <Header barWidth={barWidth} />
         <Intro barWidth={barWidth} />
         <Socials barWidth={barWidth} />

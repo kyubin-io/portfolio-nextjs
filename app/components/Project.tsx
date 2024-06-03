@@ -49,7 +49,13 @@ export default function Project({
           max-[740px]:w-[85vw] max-[740px]:right-12
           "
         >
-          <Image src={imgSrc} fill={true} alt={title} className="" />
+          {imgSrc.includes("mov") ? (
+            <video loop={true} muted={true} autoPlay className="object-fill">
+                  <source src={imgSrc} type="video/ogg" />
+            </video>
+          ) : (
+            <Image src={imgSrc} fill={true} alt={title} className="" />
+          )}
         </div>
 
         {/* project__links */}
