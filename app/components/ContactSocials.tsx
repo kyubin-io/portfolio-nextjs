@@ -7,7 +7,7 @@ export default function ContactSocials() {
         skill={"LinkedIn"}
         link={"https://www.linkedin.com/in/kyubin-kim-935788293/"}
       />
-      <CoolLink skill={"Github"} link={"https://github.com/kyubinAgnes"} />
+      <CoolLink skill={"Github"} link={"https://github.com/kyubin-io"} />
       <CoolLink skill={"Blogger"} link={"https://mnemoni-k.blogspot.com/"} />
     </div>
   );

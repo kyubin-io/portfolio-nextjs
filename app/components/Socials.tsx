@@ -6,7 +6,7 @@ const LINKS = [
     icon: (
       <FaGithubSquare className="hover:animate-[coloredIconAnimation_0.2s_infinite]" />
     ),
-    url: "https://github.com/kyubinAgnes",
+    url: "https://github.com/kyubin-io",
   },
   {
     icon: (
