@@ -33,6 +33,14 @@ export const projects: ProjectsProps[] = [
     link: "",
     skills: ["Next JS", "Typescript", "Prisma", "Tailwind"],
   },
+  {
+    title: "Discogs Artist & Music Search",
+    date: "July 14",
+    imgSrc: "/img/projects/discogs.png",
+    github: "https://github.com/kyubin-io/discogs-search-project",
+    link: "https://discogs-search-project.vercel.app/",
+    skills: ["Next JS", "Typescript", "Discogs API"],
+  },
   // {
   //   title: "Airbnb Clone",
   //   date: "March 1",
